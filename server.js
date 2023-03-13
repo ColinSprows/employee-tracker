@@ -24,3 +24,21 @@ const PORT = process.env.PORT || 3001;
 // ROUTES
 
 // START THE APP
+function initPrompt() {
+    inquirer
+        .prompt({
+            name: "init",
+            type: "list",
+            message: "What would you like to do?",
+            choices: [
+                "a",
+                "b",
+                "c",
+            ]
+        })
+        .then(function(answer) {
+            console.log("You chose: " + answer.init);
+        })
+}
+
+initPrompt();
