@@ -24,11 +24,29 @@ function quit() {
 }
 
 
-function viewAllDepartments() {}
+function viewAllDepartments() {
+    db.query(`SELECT * FROM department`, (err, result) => {
+        if (err) throw err;
+        console.table(result);
+        initPrompt();
+    });
+}
 
-function viewAllRoles() {}
+function viewAllRoles() {
+    db.query(`SELECT * FROM role`, (err, result) => {
+        if (err) throw err;
+        console.table(result);
+        initPrompt();
+    });
+}
 
-function viewAllEmployees() {}
+function viewAllEmployees() {
+    db.query(`SELECT * FROM employee`, (err, result) => {
+        if (err) throw err;
+        console.table(result);
+        initPrompt();
+    });
+}
 
 function addADepartment() {}
 
