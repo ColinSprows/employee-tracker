@@ -10,7 +10,10 @@ To install, run 'npm i' in your dedicated terminal. Then connect to sql, and tar
 
 ## Usage
 
+To see a live video, view the [demo video](https://drive.google.com/file/d/1aVD36wF1vU5d2X-30iL8hbDFId1XrBC0/view?usp=sharing)
+
 ![screenshot](./employee-tracker-screenshot.png)
+
 
 ## Features
 
