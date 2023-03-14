@@ -114,7 +114,7 @@ function addAnEmployee() {
             },
             {
                 type: "input",
-                message: "Enter role",
+                message: "Enter role id",
                 name: "role"
             },
             {
